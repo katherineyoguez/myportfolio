@@ -41,6 +41,7 @@
     color: black;
   }
 
+
   h1 {
       text-align: center;
       margin-bottom: 20px;
@@ -57,11 +58,22 @@
     font-size: 20px;
   }
 
-
-  .resize {
-    width: 400px;
-    height: 400px;
+  .larger {
+    width: 350px;
+    height: 350px;
     border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  .resize {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
 }
 
 .content {
@@ -102,6 +114,7 @@
 
 .projects {
     flex-direction: row;
+  
 }
  /* condensed codes */
  /* .card {
@@ -113,11 +126,13 @@
     box-sizing: border-box;
  } */
 
- .card, .card1, .card2, .card3 {
+ 
+
+ .card,.card1, .card2, .card3 {
      flex: 1;
      background: white;
-     padding: 30px;
-     margin: 3px;
+     padding: 5px;
+     margin: 1px;
 
  }
 
@@ -143,14 +158,8 @@
     margin-top: 20px;
   }
   
-  @media screen and (max-width: 768px) {
-    body{
-        flex-direction: column;
+  @media only screen and (min-width: 601px) {
+    .topnav, .card, .card1, .card2, .card3 {
+    
     }
   }
-  
-  @media screen and (max-width: 400px) {
-    .topnav a {
-      float: none;
-      width: 100%;
-    }
